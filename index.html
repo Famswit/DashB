@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Js DashBoard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_nav">
+            <div class="topNav">
+                <span class="material-icons-sharp close_btn"> close</span>
+
+                <div class="logo">
+                    <img src="./images/logo2.png" class="logo_part">
+                    <h2>FAM<span class="danger">SWIT</span>  </h2>
+                   
+                </div>
+          
+         
+            
+                
+        
+
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp"> dashboard</span>
+                        <h3>Dashboard</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> person</span>
+                        <h3 class="customer" onclick="pageCustomer()">Customers</h3>
+                </a>
+
+                
+
+                <a href="#">
+                    <span class="material-icons-sharp"> analytics</span>
+                        <h3>Analytics</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> message</span>
+                        <h3>Messages</h3><span class="msg">6</span>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> list_alt</span>
+                        <h3>Orders</h3>
+                </a>
+
+                <a href="#recent">
+                    <span class="material-icons-sharp"> inventory</span>
+                        <h3>Products</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> report</span>
+                        <h3>Reports</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> settings</span>
+                        <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> add</span>
+                        <h3>Add Products</h3>
+                </a>
+            </div>
+
+            <div class="logout">
+                <a href="#">
+                    <span class="material-icons-sharp" id="logoutbtn" onclick="logoutRedirect()"> logout</span>
+                        <h3>Logout</h3>
+                </a>
+            </div>
+           
+
+        </div>
+<!-- main content-->
+        <div class="content">
+
+            <h1 style="margin: .8rem 2rem">Dashboard</h1>  
+            
+            <input type="date" class="date">
+
+            <div class="card">
+                <div class="card_item"> 
+                    <div class="card_icon">
+                        <span class="material-icons-sharp" id="icon"> analytics</span>
+                    </div>
+                    <div class="card_content">
+                        <div>
+                            <span class="card_title">Total Sales</span>
+                            <h2 class="card_amount">$25,690</h2>
+                            <p class="time">last 24 hours</p>
+                        </div>
+                        <img src="./images/perc1.png" class="card_logo">
+
+                    </div>
+                    </div>
+                    
+
+
+
+                    <div class="card_item"> 
+                        <div class="card_icon">
+                            <span class="material-icons-sharp" id="icon"> analytics</span>
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <span class="card_title">Total Sales</span>
+                                <h2 class="card_amount">$5,456</h2>
+                                <p class="time">last 24 hours</p>
+                            </div>
+                            <img src="./images/perc2.png" class="card_logo">
+    
+                        </div>
+                        </div>
+
+
+                        <div class="card_item"> 
+                            <div class="card_icon">
+                                <span class="material-icons-sharp" id="icon"> analytics</span>
+                            </div>
+                            <div class="card_content">
+                                <div>
+                                    <span class="card_title">Total Sales</span>
+                                    <h2 class="card_amount">$65,100</h2>
+                                    <p class="time">last 24 hours</p>
+                                </div>
+                                <img src="./images/perc3.png" class="card_logo">
+        
+                            </div>
+                            </div>
+
+            </div>
+<div class="order" style="margin: 1rem 2rem;">
+    <h2 class="order_word" id="recent">Recent Orders</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment Status</th>
+                <th>Details</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+               <td>Phone</td>
+                <td>67843</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+
+            </tr>
+               
+            
+
+        </tbody>
+    </table>
+    <a href="#" class="show">Show all</a>
+</div>
+
+        </div>
+
+
+        <!-- end of content-->
+
+
+<!-- right nav-->
+        <div class="right_nav">
+            <div class="right_top">
+            
+<button>
+                    <span class="material-icons-sharp menu_icon"> menu</span>
+
+                </button>
+            
+                <div class="toggler">
+                        <span class="material-icons-sharp active"> light_mode</span>
+                        <span class="material-icons-sharp dark-theme-variables"> dark_mode</span>
+                   
+                </div>
+
+                    <div class="profile">
+                        <div class="profile_words">
+                            <span>Hey, <span style="font-weight: bold;">Ben </span>
+                            <p class="admin">Admin</p>
+                        </div>
+                        <div>
+                        <img src="./images/male2.jpg" class="profile_pics">
+                    </div>
+                    </div>
+            </div>
+
+            <div class="updates">
+                <h2 style="margin-top: 1rem; margin-bottom: .5rem;">Recent Updates</h2>
+                <div class="updatecontent">
+                    <div class="updateprofile">
+                        <img src="./images/male2.jpg" class="update_pics">
+                        <p style="line-height: 18px;"> <span style="font-weight: bold;">Mr Ben</span>  received the update of the ne 
+                            delivery scheduled to be delivered on the updated date. <br/> 2 minutes ago</p>
+
+                    </div>
+
+                    <div class="updateprofile">
+                        <img src="./images/male2.jpg" class="update_pics">
+                        <p style="line-height: 18px;"> <span style="font-weight: bold;">Mr Ben</span>  received the update of the ne 
+                            delivery scheduled to be delivered on the updated date. <br/> 2 minutes ago</p>
+
+                    </div>
+
+                    
+
+                    
+                </div>
+
+            </div>
+
+            <div class="analysis">
+                <h2 style="margin: 1.1rem 0;">Sales Analytics</h3>
+                <div class="update_analysis" >
+                    <span class="material-icons-sharp"> analytics</span>
+                    <p style="line-height: 18px;"> <span style="font-weight: bold;">ONLINE ORDERS</span> <span style="color: green; margin-left: 2rem;">21%</span>  
+                         <span style="margin-left: 1rem;">76.98</span>   <br/> last 24 hours</p>
+
+                </div>
+
+                <div class="update_analysis" >
+                    <span class="material-icons-sharp"> shopping_cart</span>
+                    <p style="line-height: 18px;"> <span style="font-weight: bold;">OFFLINE ORDERS</span> <span style="color: red; margin-left: 2rem;">21%</span>  
+                         <span style="margin-left: 1.3rem;">76.98</span>   <br/> last 24 hours</p>
+
+                </div>
+
+                <div class="update_analysis">
+                    <span class="material-icons-sharp"> group</span>
+                    <p style="line-height: 18px;"> <span style="font-weight: bold;">NEW CUSTOMER</span> <span style="color: green; margin-left: 2rem;">21%</span>  
+                         <span style="margin-left: 1.5rem;">76.98</span>   <br/> last 24 hours</p>
+
+                </div>
+
+                <button class="product_btn">
+                    <span class="material-icons-sharp"> add</span>
+                   <span style="font-weight: 900;">Add Product</span> 
+                </button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="order.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

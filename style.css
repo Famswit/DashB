@@ -1,0 +1,589 @@
+/* ---------------dark theme variables------------- */
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white:#202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow:0 2rem 3rem var(--color-light);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: rgb(245, 241, 241);
+    user-select: none;
+    overflow-x: hidden;
+}
+.container{
+    width: 98%;
+    display: grid;
+    grid-template-columns: 14rem auto 23rem;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+
+/* ---------------left nav started------------- */
+
+.left_nav{
+    width: 15rem;
+    background-color: #fff;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.logo_part{
+    width: 4rem;
+    height: 3rem;
+}
+.close_btn{
+    float: right;
+}
+h2{
+    font-size: 20px;
+    font-weight: 900;
+}
+.danger{
+    color: orangered;
+}
+.sidebar{
+    margin-top: 3rem;
+    left: 100%;
+    animation: showTable 400ms ease forwards;
+}
+@keyframes showTable{
+    to {
+        left: 0;
+    }
+}
+
+
+.logout{
+    margin-top: 18vh;
+}
+.logout:hover{
+    margin-left: .5rem;
+    transition: all 300ms ease-out;
+}
+
+.msg{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+}
+
+a{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.571);
+    transition: all 300ms ease;
+
+}
+.active{
+    margin-left: 0;
+    background-color: rgba(255, 68, 0, 0.314);
+    padding: 1rem;
+    transition: all 300ms ease;
+
+}
+.sidebar a:hover{
+    background-color: rgba(255, 68, 0, 0.314);
+    padding: 1rem;
+    
+}
+.material-icons-sharp{
+    font-size: 18px;
+}
+h3{
+    color: rgba(0, 0, 0, 0.686);
+    font-size: 13px;
+}
+
+
+/* ---------------content started------------- */
+
+.content{
+    min-width: 48vw;
+}
+
+.date{
+    background-color: rgba(255, 68, 0, 0.873);
+    padding: 5px;
+    color: #fff;
+    border-radius: 1rem;
+    margin-left: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    transition: all 300ms ease;
+}
+.card:hover{
+    background-color: transparent;
+    box-shadow:  0 .1rem 1rem rgb(118, 109, 109);
+   
+}
+.card_item{
+    width: 210px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: all 300ms ease;
+
+}
+
+.card_icon{
+    background-color: orangered;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin: 1rem;
+}
+#icon{
+ color: #fff;
+ margin: 8px;
+}
+.card_content{
+    display: flex;
+    justify-content: space-around;
+}
+.card_logo{
+    width: 6rem;
+    height: 6rem;
+}
+.card_title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.card_amount{
+    margin-top: 1rem;
+
+}
+.time{
+    margin-top: 3rem;
+}
+table{
+    width: 100%;
+    min-height: 20rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: .5rem;
+    box-shadow:  0 .1rem 1rem rgb(155, 147, 147);
+    transition: all 300ms ease;
+    left: -100%;
+    animation: showTable 400ms ease forwards;
+}
+@keyframes showTable{
+    to {
+        left: 0;
+    }
+}
+td{
+    height: 1.5rem;
+    padding-top: .5rem;
+    font-weight: 5;
+    border-bottom: 1px solid rgb(205, 200, 200);
+}
+.show{
+  color: blue;
+  font-weight: 800;
+  margin-left: 50%;
+  margin-top: 1rem;
+}
+
+
+
+
+/* ---------------right nav started------------- */
+
+
+
+.right_nav{
+    width: 22vw;
+}
+.right_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_icon{
+    display: none;
+}
+.profile_pics{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.right_nav .toggler {
+    margin-top: 2rem;
+    background-color: rgb(237, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+.right_nav .toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_nav .toggler span.active{
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.profile{
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 2.6rem;
+
+}
+
+
+.admin{
+    padding-top: 5px;
+}
+.updates{
+    border-radius: 70%;
+   
+}
+.updates:hover{
+    margin-left: .5rem;
+    transition: all 300ms ease-in;
+    box-shadow:  0 0 0 rgb(155, 147, 147);
+}
+.updatecontent{
+    width: 100%;
+    background-color: #fff;
+}
+.updateprofile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.update_pics{
+    width: 7rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.update_analysis{
+    display: flex;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: .3rem;
+}
+.update_analysis:hover{
+    margin-left: .5rem;
+    transition: all 300ms ease-in;
+    box-shadow:  0 1rem 5rem rgb(155, 147, 147);
+}
+.analysis_icon_one{
+    width: 2rem;
+    height: 2rem;
+    background-color: orangered;
+    border-radius: 100%;
+    text-align: center;
+}
+.product_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 68, 0, 0.626);
+    padding: .8rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border: 2px dashed black;
+    box-shadow:  0 .1rem 1rem rgb(155, 147, 147);
+    transition: all 300ms ease-in;
+}
+.product_btn:hover{
+    margin-left: .5rem;
+    transition: all 100ms ease-out;
+    box-shadow:  0 1rem 5rem rgb(155, 147, 147);
+}
+.product_btn :focus{
+    background-color: orangered;
+}
+
+
+/* ---------------media queries started------------- */
+@media screen  and (max-width: 1200px){
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+    html{
+        font-size: 12px;
+    }
+    .left_nav{
+        width: 6rem;
+        margin-left: -1.7rem;
+        z-index: 10;
+
+    }
+
+    .logo h2{
+        display: none;
+    }
+    .sidebar h3{
+        display: none;
+    }
+
+    .sidebar a{
+        width: 5rem;
+    }
+    .logout{
+        font-size: smaller;
+        margin-left: -1rem;
+
+    }
+    
+    .content{
+        margin-left: -4.8rem;
+    }
+    .right_nav{
+        margin-left: 4rem;
+        width: 20rem;
+    }
+    
+    .card{
+        font-size: smaller;
+    }
+    .card_item{
+        font-size: smaller;
+        width: 170px;
+        height: 150px;
+    }
+    .card_icon{
+        width: 25px;
+        height: 25px;
+    }
+    #icon{
+        margin: 4px;
+       }
+    .time{
+        margin-top: 1rem;
+    }
+    .card_logo{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+}
+
+@media screen  and (max-width: 600px){
+    .container{
+        width: 84%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .left_nav{
+        display: none;
+        z-index: 10;
+
+    }
+    .right_top{
+        margin: auto;
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        z-index: 2;
+        box-shadow:  0 1rem 20rem rgb(155, 147, 147);
+
+    }
+    .content{
+        margin: 4rem auto ;
+    }
+    .card_logo{
+        width: 6rem;
+        height: 6rem;
+    }
+    .card_item{
+        font-size: smaller;
+        width: 250px;
+        height: 150px;
+    }
+    .time{
+        font-size: 1rem;
+    }
+    table{
+        width: 100%;
+       
+    }
+
+    
+    .mode{
+        margin-left: 10rem;    }
+    .menu_icon{
+        background-color: white;
+            display: block;
+            margin-left: 2rem;
+        }
+        .profile_words{
+            margin-left: -3rem;
+            width: 4rem;
+        }
+    .profile_pics{
+        margin-right: 5rem;
+    }
+}
+
+
+
+
+
+/* ---------------login page------------- */
+.back{
+    width: 35vw;
+    height: 70vh;
+    background-color: rgba(255, 68, 0, 0.601);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-shadow:  0 1rem 20rem rgb(155, 147, 147);
+
+}
+.main_page{
+    width: 30vw;
+    height: 80vh;
+    background-color: rgb(247, 244, 244);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 1rem;
+    margin-left: auto;
+    text-align: center;
+}
+
+.log_img{
+    width: 22rem;
+    height: 13rem;
+}
+.log_input_user :hover{
+    margin-left: .1rem;
+    transition: all 300ms ease;
+}
+.log_input_user input{
+    width: 70%;
+    background-color: black;
+    color: white;
+    margin-top: 1.5rem ;
+    margin-left: -3rem;
+    padding: .9rem;
+    border-radius: 2rem;
+    box-shadow:  0 .1rem 1rem rgb(155, 147, 147);
+}
+.log_input_user input::placeholder{
+    text-align: center;
+}
+.user{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: orangered;
+    border-radius: 100%;
+    padding: 1rem;
+    z-index: 3;
+   position: relative;
+  
+}
+
+.log_input_pwd input{
+    width: 70%;
+    background-color: black;
+    color: white;
+    margin-top: 1.5rem ;
+    margin-right: -3rem;
+    padding: .9rem;
+    border-radius: 2rem;
+}
+.log_input_pwd:hover{
+    margin-left: .5rem;
+    transition: all 300ms ease;
+}
+.log_input_pwd input::placeholder{
+    text-align: center;
+}
+.log_btn{
+    width: 70%;
+    background-color: black;
+    padding: .7rem;
+    margin-top: 1.5rem ;
+    color: orangered;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    
+}
+.log_btn:hover{
+    margin-left: .5rem;
+    transition: all 300ms ease;
+}
+.log_word{
+    margin-top: .5rem;
+}
+.log_link{
+    padding: 2rem 2rem;
+}
